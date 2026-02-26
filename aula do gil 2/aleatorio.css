@@ -1,43 +1,43 @@
 a{
-            text-decoration: none;
-             color: darkblue;
-        }
-        body {
-            background-image: url(https://gileduardo.com.br/ifpr/dw/img/background.png);
-            margin: 0;
-            padding: 0;
-        }
-        div{
-            color: darkblue;
-        }
+    text-decoration: none;
+        color: darkblue;
+}
+body {
+    background-image: url(https://gileduardo.com.br/ifpr/dw/img/background.png);
+    margin: 0;
+    padding: 0;
+}
+div{
+    color: darkblue;
+}
 
-        #hk{
-            text-align: center;
-            box-sizing: border-box;
-            background-color:darkblue;
-            padding: 40px;
-            border-bottom: 10px solid aqua;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        span {
-        color: white;
-        font-size: 20px;
-        margin-right: 20px;
-        margin-left:3px;
-        border-right: 3px solid white;
-        padding-right: 5px;
-        }
-        
+#hk{
+    text-align: center;
+    box-sizing: border-box;
+    background-color:darkblue;
+    padding: 40px;
+    border-bottom: 10px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left:3px;
+    border-right: 3px solid white;
+    padding-right: 5px;
+}
 
-        i:active,i:hover,span:hover,span:active {
-            color: rgb(0, 255, 0);
-        }
-        i{
-            border-left: 3px solid white;
-            color: white;
-        }
-        li{
-            font-size: 25px;
-        }
+
+i:active,i:hover,span:hover,span:active {
+    color: rgb(0, 255, 0);
+}
+i{
+    border-left: 3px solid white;
+    color: white;
+}
+li{
+    font-size: 25px;
+}
