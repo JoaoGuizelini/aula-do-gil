@@ -1,0 +1,39 @@
+.do-lado{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+.container{
+    display: flex;
+}
+.conteiner2{
+    display: flex;
+}
+.marom{
+    z-index: 100;
+    background-color: brown;
+}
+.verde{
+    background-color: green;
+}
+.rosa{
+    background-color: pink;
+}
+
+#cor{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
