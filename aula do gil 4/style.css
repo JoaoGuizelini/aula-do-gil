@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header{
+    background: rgb(15 23 42 / .95);
+    position: sticky;
+    padding: 2rem 2rem;
+    z-index: 100;
+    border-bottom: 2px solid#6366f1;
+    box-shadow: 0 4px 6px rgb(0 0 0 / .1);
+}
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+    justify-items: center;
+}
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width:0;
+    height: 2px;
+    background: #6366f1;
+    transition: width 0.3s ease;
+}
+nav a:hover {
+    color: #6366f1;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+.header-content{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6366f1,#ec4899);
+    -webkit-text-fill-color: #fff0;
+    background-clip: text;
+    transform: translateY(0);
+    animation: logoFloat 3s ease-in-out infinite;
+}
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.cleber {
+    background: linear-gradient(135deg, rgb(99 102 241 / .1) 0%, rgb(236 72 153 / .1) 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.cleber-text{
+    text-align: left;
+    padding-right: 32px;
+}
+.cleber-text h1{
+    color:#f1f5f9;
+    animation: slideDown 0.8s ease-in-out;
+}
+.cleber-text p{
+    color: #cbd5e1;
+    animation: slideUp 0.8s ease-in-out;
+}
+.contato-buttom {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgb(99 102 241 / .4);
+    animation: slideUp 0.8s ease-out 0.4s backwards;
+}
+.cleber-visual{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.giramento {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    border-radius: 20px;
+    grid-column: 1;
+    grid-row: 1;
+    animation: giramento 4s ease-in-out infinite;
+}
+@keyframes giramento {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
