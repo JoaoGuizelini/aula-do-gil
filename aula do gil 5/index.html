@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <div class="do-lado">
-            <div>
+            <div class="a">
                 <h1>SIMULADOR</h1>
                 <p>Flexbox</p>
             </div>
-            <div>
+            <div class="colors">
                 <h2>cor</h2>
                 <div class="conteiner2">
                     <div class="quad1">
@@ -25,8 +25,8 @@
                         <a href="#"><div class="cor" id="preto"></div></a>
                     </div>
                     <div class="quad3">
-                        <a href="#"><div class="cor" id="rosa"></div></a>
-                        <a href="#"><div class="cor" id="vermelho"></div></a>
+                        <a href="#"><div class="cor" id="rosa" onclick="setBgColor('pink')"></div></a>
+                        <a href="#"><div class="cor" id="vermelho" onclick="setBgColor('red')"></div></a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
             </div>
             <div> 
                 <h2>tamanho</h2>
-                <input type="number">
+                <input type="number" step="10" value="80" id="size">
             </div>
             <div>
                 <h2>alinhamento</h2>
@@ -59,6 +59,8 @@
                             <option value="center">center</option>
                             <option value="flex-start">flex-start</option>
                             <option value="flex-end">flex-end</option>
+                            <option value="space-between">space-between</option>
+                            <option value="space-around">space-around</option>
                         </select>
                     </div>
                     <div>
@@ -67,15 +69,18 @@
                             <option value="center">center</option>
                             <option value="inherit">inherit</option>
                             <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                            <option value="stretch">stretch</option>
+
                         </select>
                     </div>
                 </div>
             </div>
         </div>
         <main id="main">
-            <div id="box">1</div>
-            <div id="box">2</div>
-            <div id="box">3</div>
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
         </main>
     </div>
     <script src="back.js"></script>

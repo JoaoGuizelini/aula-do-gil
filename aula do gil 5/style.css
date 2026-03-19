@@ -3,6 +3,22 @@
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
+    padding:10px ;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+h2{
+    margin:5px;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 *{
     margin: 0;
@@ -64,8 +80,9 @@
 main{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
-#box{
+.box{
     width: 80px;
     height: 80px;
     background-color: blue;
