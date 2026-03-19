@@ -1,0 +1,92 @@
+.do-lado{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding:10px ;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+h2{
+    margin:5px;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.conteiner2{
+    display: flex;
+}
+#marom{
+    background-color: brown;
+}
+#verde{
+    background-color: green;
+}
+#rosa{
+    background-color: pink;
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#preto{
+    background-color: royalblue;
+}
+
+.amarelo:hover, .rosa:hover, .vermelho:hover, .preto:hover, .marom:hover, .verde:hover{
+    border: 3px solid black;
+    width: 27px;
+    height: 27px;
+}
+.form{
+    display: flex;
+}
+.bola{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+.quadrado{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+.cor{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
