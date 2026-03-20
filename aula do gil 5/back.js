@@ -20,14 +20,14 @@ const bola = document.querySelector(".bola");
 const quadrado = document.querySelector(".quadrado");
 
 bola.addEventListener("click", function(){
-    const caixas = document.querySelectorAll("#main div");
+    const caixas = document.querySelectorAll(".box");
     caixas.forEach(function(box){
         box.style.borderRadius = "50%";
     });
 });
 
 quadrado.addEventListener("click", function(){
-    const caixas = document.querySelectorAll("#main div");
+    const caixas = document.querySelectorAll(".box");
     caixas.forEach(function(box){
         box.style.borderRadius = "0px";
     })
